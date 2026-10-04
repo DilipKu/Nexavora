@@ -144,20 +144,20 @@ const {
 		<div class="mb-16 overflow-hidden rounded-2xl border border-white/10 bg-white/[0.04] shadow-[0_24px_80px_rgba(0,0,0,0.35)]">
 			<div class="flex flex-col md:flex-row">
 				<div class="relative aspect-video w-full shrink-0 md:aspect-auto md:w-[42%] md:min-h-[14rem]">
-					<SmartImage src={promoImageSrc || footerData.promo?.imageSrc} alt={promoImageAlt || footerData.promo?.imageAlt} class="absolute inset-0 h-full w-full object-cover" loading="lazy" />
+					<SmartImage src={promoImageSrc || (footerData as any).promo?.imageSrc} alt={promoImageAlt || (footerData as any).promo?.imageAlt} class="absolute inset-0 h-full w-full object-cover" loading="lazy" />
 					<div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-brand-dark/80 via-transparent to-transparent md:bg-gradient-to-r" aria-hidden="true"></div>
 				</div>
 				<div class="flex flex-col justify-center gap-4 px-6 py-8 md:flex-1 md:px-10 md:py-10">
-				<Text variant="accent-label" class="text-brand-accent">{promoTagline || footerData.promo?.tagline}</Text>
+				<Text variant="accent-label" class="text-brand-accent">{promoTagline || (footerData as any).promo?.tagline}</Text>
 				<Heading tag={headingTag} variant="section-title" class="text-white text-balance">
-					{promoTitle || footerData.promo?.title}
+					{promoTitle || (footerData as any).promo?.title}
 				</Heading>
 					<Text variant="body" class="ui-text-on-dark-subtle max-w-xl text-pretty">
-						{promoDescription || footerData.promo?.description}
+						{promoDescription || (footerData as any).promo?.description}
 					</Text>
 					<div class="pt-2">
-						<Button href={formatInternalLink(promoCtaHref || footerData.promo?.ctaHref)} variant="accent" class="min-h-11 px-8">
-							{promoCtaLabel || footerData.promo?.ctaLabel}
+						<Button href={formatInternalLink(promoCtaHref || (footerData as any).promo?.ctaHref)} variant="accent" class="min-h-11 px-8">
+							{promoCtaLabel || (footerData as any).promo?.ctaLabel}
 						</Button>
 					</div>
 				</div>

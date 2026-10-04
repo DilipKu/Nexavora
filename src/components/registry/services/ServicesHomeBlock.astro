@@ -6,7 +6,7 @@ import Text from "@components/ui/atoms/Text.astro";
 import Icon from "@components/ui/atoms/Icon.astro";
 import jsonData from "@data/sections/nova-services.json";
 
-type Service = { number: string; icon?: string; title: string; description: string };
+type Service = { number: string; icon?: string; title: string; description: string; tech?: string };
 interface Props { id?: string; locale?: "en" | "pl"; title?: string; description?: string; linkLabel?: string; linkHref?: string; items?: Service[]; class?: string; }
 const props = Astro.props as Props;
 const title = props.title ?? jsonData.title;

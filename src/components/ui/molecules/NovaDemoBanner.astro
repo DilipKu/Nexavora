@@ -6,10 +6,12 @@ interface Props {
 }
 
 const { locale = "pl" } = Astro.props as Props;
-const copy = getNovaCopy(locale).demoBanner;
+const copy = getNovaCopy(locale)?.demoBanner;
+const hasContent = Boolean(copy && (copy.label || copy.downloadLabel || copy.customizeLabel));
 ---
 
-<div data-nova-demo-banner class="sticky top-0 z-[1100] flex min-h-11 items-center bg-brand-dark text-brand-light">
+{hasContent && (
+  <div data-nova-demo-banner class="sticky top-0 z-[1100] flex min-h-11 items-center bg-brand-dark text-brand-light">
   <div class="mx-auto flex w-full max-w-7xl items-center justify-between gap-4 px-4 py-2 text-xs sm:px-6 lg:px-8">
     <p class="hidden min-w-0 truncate text-brand-light/75 sm:block">{copy.label}</p>
     <div class="ml-auto flex shrink-0 items-center gap-3 sm:gap-5">
@@ -32,3 +34,4 @@ const copy = getNovaCopy(locale).demoBanner;
     </div>
   </div>
 </div>
+)}

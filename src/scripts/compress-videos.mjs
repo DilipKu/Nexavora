@@ -5,8 +5,6 @@
 //   - webm konwertuje do mp4 i usuwa zrodlo, jesli nowy plik powstanie poprawnie
 // Bledy per-plik nie przerywaja calosci.
 
-import { createRequire } from 'module';
-const require = createRequire(import.meta.url);
 import fs from "node:fs";
 import path from "node:path";
 import { execFileSync } from "node:child_process";
