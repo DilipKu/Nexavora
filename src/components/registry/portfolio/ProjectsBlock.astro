@@ -1,0 +1,153 @@
+---
+import Section from "@components/ui/layout/Section.astro";
+import Container from "@components/ui/layout/Container.astro";
+import Heading from "@components/ui/atoms/Heading.astro";
+import Text from "@components/ui/atoms/Text.astro";
+import SmartImage from "@components/ui/atoms/SmartImage.astro";
+import jsonData from "@data/sections/nova-projects.json";
+import { ACTIVE_TEMPLATE } from "@config/template";
+
+type Project = {
+  slug?: string;
+  category: string;
+  title: string;
+  description?: string;
+  technologies?: string[];
+  image: string;
+  alt: string;
+  url?: string;
+  ctaLabel?: string;
+  featured?: boolean;
+};
+
+interface Props {
+  title?: string;
+  description?: string;
+  linkLabel?: string;
+  linkHref?: string;
+  items?: Project[];
+  class?: string;
+}
+
+const props = Astro.props as Props;
+const fallback = ACTIVE_TEMPLATE === "nova" ? undefined : jsonData;
+const title = props.title ?? fallback?.title ?? "Technology we've brought to life";
+const description = props.description ?? fallback?.description ?? "Explore selected digital products, platforms and experiences we've designed and engineered.";
+const linkLabel = props.linkLabel ?? fallback?.linkLabel ?? "View all work";
+const linkHref = props.linkHref ?? fallback?.linkHref ?? "/work/";
+const items = (props.items ?? fallback?.items ?? []) as Project[];
+
+const featuredProject = items.find((item) => item.featured) || items[0];
+const secondaryProjects = items.filter((item) => item !== featuredProject);
+---
+
+<Section id="work" tone="page" class:list={["relative z-[1] py-16 lg:py-24", props.class]}>
+  <Container class="w-full max-w-none px-[clamp(1.25rem,4vw,4rem)]">
+    <div class="projects-intro mb-10 lg:mb-14">
+      <div>
+        <Text tag="p" variant="accent-label" class="mb-3 font-semibold tracking-[0.18em]">PORTFOLIO SHOWCASE</Text>
+        <Heading tag="h2" variant="section-title" class="text-[clamp(2rem,3.5vw,3.25rem)] font-bold tracking-tight">{title}</Heading>
+      </div>
+      <div class="flex flex-col items-start gap-4 lg:items-end lg:text-right">
+        <Text variant="lead" class="max-w-xl text-base opacity-85 sm:text-lg">{description}</Text>
+        <a class="projects-link group inline-flex items-center gap-2 font-semibold text-brand-dark transition-colors hover:text-brand-accent" href={linkHref}>
+          <span>{linkLabel}</span>
+          <span class="inline-block transition-transform duration-300 group-hover:translate-x-1" aria-hidden="true">→</span>
+        </a>
+      </div>
+    </div>
+
+    {featuredProject && (
+      <div class="featured-project-card group relative mb-8 overflow-hidden rounded-2xl border border-black/10 bg-surface shadow-xl dark:border-white/10">
+        <a href={featuredProject.url || linkHref} target={featuredProject.url ? "_blank" : undefined} rel={featuredProject.url ? "noopener noreferrer" : undefined} class="grid grid-cols-1 overflow-hidden lg:grid-cols-12">
+          <div class="relative min-h-[22rem] lg:col-span-7 lg:min-h-[30rem]">
+            <SmartImage src={featuredProject.image} alt={featuredProject.alt} width={1280} height={800} loading="eager" class="h-full w-full object-cover object-center transition-transform duration-700 ease-out group-hover:scale-105" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent lg:hidden"></div>
+          </div>
+          <div class="flex flex-col justify-between p-6 sm:p-8 lg:col-span-5 lg:p-10">
+            <div>
+              <div class="mb-4 inline-flex items-center gap-2 rounded-full bg-brand-accent/15 px-3.5 py-1 text-xs font-bold tracking-wider text-brand-dark dark:bg-brand-accent/20 dark:text-brand-accent">
+                <span>FEATURED</span> • <span>{featuredProject.category}</span>
+              </div>
+              <Heading tag="h3" variant="section-heading-lg" class="mb-4 text-2xl font-bold tracking-tight sm:text-3xl text-brand-dark dark:text-white">
+                {featuredProject.title}
+              </Heading>
+              {featuredProject.description && (
+                <Text variant="body" class="mb-6 leading-relaxed opacity-85 text-base">
+                  {featuredProject.description}
+                </Text>
+              )}
+              {featuredProject.technologies && featuredProject.technologies.length > 0 && (
+                <div class="mb-8 flex flex-wrap gap-2">
+                  {featuredProject.technologies.map((tech) => (
+                    <span class="rounded-md bg-surface-container-low px-3 py-1 text-xs font-medium text-inherit border border-black/5 dark:border-white/10">
+                      {tech}
+                    </span>
+                  ))}
+                </div>
+              )}
+            </div>
+            <div class="inline-flex items-center gap-2 font-bold text-brand-accent transition-all group-hover:translate-x-1">
+              <span>{featuredProject.ctaLabel || "View Project"}</span>
+              <span aria-hidden="true">↗</span>
+            </div>
+          </div>
+        </a>
+      </div>
+    )}
+
+    {secondaryProjects.length > 0 && (
+      <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:gap-8">
+        {secondaryProjects.map((item) => (
+          <a href={item.url || linkHref} target={item.url ? "_blank" : undefined} rel={item.url ? "noopener noreferrer" : undefined} class="secondary-project-card group relative flex flex-col overflow-hidden rounded-2xl border border-black/10 bg-surface shadow-md transition-all duration-300 hover:-translate-y-1 hover:shadow-xl dark:border-white/10">
+            <div class="relative aspect-[16/10] w-full overflow-hidden bg-surface-container-low">
+              <SmartImage src={item.image} alt={item.alt} width={900} height={600} loading="lazy" class="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-105" />
+              <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+              <span class="absolute left-4 top-4 rounded-full bg-black/60 px-3 py-1 text-xs font-semibold text-white backdrop-blur-md">
+                {item.category}
+              </span>
+            </div>
+            <div class="flex flex-1 flex-col justify-between p-6">
+              <div>
+                <Heading tag="h3" variant="feature-title" class="mb-2 text-xl font-bold tracking-tight text-brand-dark dark:text-white">
+                  {item.title}
+                </Heading>
+                {item.description && (
+                  <Text variant="body" class="mb-4 text-sm leading-relaxed opacity-85">
+                    {item.description}
+                  </Text>
+                )}
+                {item.technologies && (
+                  <div class="mb-4 flex flex-wrap gap-1.5">
+                    {item.technologies.map((tech) => (
+                      <span class="rounded bg-surface-container-low px-2.5 py-0.5 text-[0.72rem] font-medium opacity-80 border border-black/5 dark:border-white/10">
+                        {tech}
+                      </span>
+                    ))}
+                  </div>
+                )}
+              </div>
+              <div class="inline-flex items-center gap-1.5 text-sm font-bold text-brand-accent group-hover:underline">
+                <span>{item.ctaLabel || "View Project"}</span>
+                <span aria-hidden="true">↗</span>
+              </div>
+            </div>
+          </a>
+        ))}
+      </div>
+    )}
+  </Container>
+</Section>
+
+<style>
+  .projects-intro {
+    display: grid;
+    gap: 1.25rem;
+  }
+  @media (min-width: 64rem) {
+    .projects-intro {
+      grid-template-columns: 1fr 1fr;
+      align-items: flex-end;
+    }
+  }
+</style>

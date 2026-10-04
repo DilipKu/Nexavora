@@ -1,0 +1,17 @@
+{
+  "title": "Technology for every industry",
+  "tagline": "DOMAIN EXPERTISE",
+  "description": "We engineer domain-specific software solutions tailored to the operational demands and regulatory environments of key global industries.",
+  "items": [
+    { "name": "FinTech", "icon": "bank", "description": "Secure payment platforms, trading systems and banking infrastructure." },
+    { "name": "Healthcare", "icon": "heartbeat", "description": "HIPAA-compliant platforms, telemedicine and digital health solutions." },
+    { "name": "E-commerce", "icon": "shopping-bag", "description": "Scalable B2B/B2C storefronts, inventory and checkout automation." },
+    { "name": "Automotive & EV", "icon": "car", "description": "Telematics platforms, EV fleet management and connected mobility." },
+    { "name": "Education", "icon": "student", "description": "LMS platforms, virtual learning environments and EdTech apps." },
+    { "name": "Real Estate", "icon": "buildings", "description": "PropTech portals, property management platforms and smart asset search." },
+    { "name": "Travel & Tourism", "icon": "airplane", "description": "Booking engines, itinerary management and hospitality platforms." },
+    { "name": "Media & Entertainment", "icon": "film-strip", "description": "Digital streaming platforms, content CMS and high-traffic media feeds." },
+    { "name": "Enterprise", "icon": "shield-check", "description": "Custom ERP, CRM platforms, legacy modernization and cloud migrations." },
+    { "name": "Startups", "icon": "rocket-launch", "description": "Rapid MVP engineering, scalable architecture and venture scaling." }
+  ]
+}

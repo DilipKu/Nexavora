@@ -1,0 +1,56 @@
+---
+import Section from "@components/ui/layout/Section.astro";
+import Container from "@components/ui/layout/Container.astro";
+import Heading from "@components/ui/atoms/Heading.astro";
+import Text from "@components/ui/atoms/Text.astro";
+import jsonData from "@data/sections/process-steps.json";
+
+interface Step {
+  number: string;
+  title: string;
+  description: string;
+}
+
+interface Props {
+  title?: string;
+  tagline?: string;
+  description?: string;
+  steps?: Step[];
+  class?: string;
+}
+
+const props = Astro.props as Props;
+const title = props.title ?? jsonData.title;
+const tagline = props.tagline ?? jsonData.tagline;
+const description = props.description ?? jsonData.description;
+const steps = props.steps ?? jsonData.steps;
+---
+
+<Section id="process" tone="page" class:list={["py-16 lg:py-24 bg-surface text-brand-dark relative", props.class]}>
+  <Container class="w-full max-w-none px-[clamp(1.25rem,4vw,4rem)]">
+    <div class="mb-12 max-w-3xl lg:mb-16">
+      {tagline && <Text tag="p" variant="accent-label" class="mb-3 font-semibold tracking-[0.18em]">{tagline}</Text>}
+      <Heading tag="h2" variant="section-title" class="mb-4 text-[clamp(2rem,3.5vw,3.25rem)] font-bold tracking-tight">{title}</Heading>
+      {description && <Text variant="lead" class="text-base opacity-85 sm:text-lg">{description}</Text>}
+    </div>
+
+    <!-- Desktop horizontal grid, Mobile vertical timeline -->
+    <div class="relative grid grid-cols-1 gap-8 md:grid-cols-5 md:gap-4 lg:gap-6">
+      <div class="hidden md:block absolute top-[2.25rem] left-[10%] right-[10%] h-0.5 bg-gradient-to-r from-brand-accent/20 via-brand-accent to-brand-accent/20 z-0" aria-hidden="true"></div>
+      
+      {steps.map((step) => (
+        <div class="relative z-10 flex flex-col items-start md:items-center text-left md:text-center group">
+          <div class="mb-4 flex size-12 items-center justify-center rounded-full border-2 border-brand-accent bg-surface font-mono text-sm font-bold text-brand-dark shadow-md transition-all duration-300 group-hover:scale-110 group-hover:bg-brand-accent group-hover:text-brand-dark">
+            {step.number}
+          </div>
+          <Heading tag="h3" variant="feature-title" class="mb-2 text-lg font-bold tracking-tight text-brand-dark dark:text-white">
+            {step.title}
+          </Heading>
+          <Text variant="body" class="text-sm leading-relaxed opacity-80">
+            {step.description}
+          </Text>
+        </div>
+      ))}
+    </div>
+  </Container>
+</Section>

@@ -1,0 +1,37 @@
+{
+  "title": "Why NEXVORA?",
+  "tagline": "ENGINEERING EXCELLENCE",
+  "description": "We combine deep technical expertise with product discipline to engineer software that drives real commercial growth.",
+  "items": [
+    {
+      "number": "01",
+      "title": "Engineering-first",
+      "description": "Technology decisions built around scalability, maintainability and real-world performance."
+    },
+    {
+      "number": "02",
+      "title": "Product mindset",
+      "description": "We think beyond individual features and build complete digital experiences."
+    },
+    {
+      "number": "03",
+      "title": "AI-ready",
+      "description": "We integrate modern AI capabilities where they create meaningful business value."
+    },
+    {
+      "number": "04",
+      "title": "Scalable architecture",
+      "description": "We design systems that can evolve as your business grows."
+    },
+    {
+      "number": "05",
+      "title": "Transparent delivery",
+      "description": "Clear communication, milestones and measurable progress throughout the engagement."
+    },
+    {
+      "number": "06",
+      "title": "Long-term partnership",
+      "description": "We build technology relationships that continue beyond launch."
+    }
+  ]
+}

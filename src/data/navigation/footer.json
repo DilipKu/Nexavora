@@ -1,0 +1,59 @@
+{
+  "about": "Building tomorrow's digital experience. NEXVORA Technologies designs and engineers modern platforms, mobile applications, and intelligent technology solutions.",
+  "contactTitle": "Contact",
+  "copyrightText": "NEXVORA Technologies. All rights reserved.",
+  "attribution": {
+    "label": "Engineered by NEXVORA Technologies",
+    "href": "https://nexvora.com",
+    "prefix": "Engineered by:",
+    "linkLabel": "NEXVORA"
+  },
+  "aria": {
+    "quickNav": "Quick links and documents",
+    "legalDocs": "Legal documents"
+  },
+  "columns": [
+    {
+      "title": "Company",
+      "links": [
+        { "label": "About", "href": "/about/" },
+        { "label": "Work", "href": "/work/" },
+        { "label": "Careers", "href": "/contact/" },
+        { "label": "Contact", "href": "/contact/" }
+      ]
+    },
+    {
+      "title": "Services",
+      "links": [
+        { "label": "Web Development", "href": "/services/" },
+        { "label": "Mobile Development", "href": "/services/" },
+        { "label": "Product Engineering", "href": "/services/" },
+        { "label": "AI & Automation", "href": "/services/" },
+        { "label": "Cloud & Backend", "href": "/services/" }
+      ]
+    },
+    {
+      "title": "Industries",
+      "links": [
+        { "label": "FinTech", "href": "/services/" },
+        { "label": "Healthcare", "href": "/services/" },
+        { "label": "E-commerce", "href": "/services/" },
+        { "label": "Automotive & EV", "href": "/services/" },
+        { "label": "Enterprise", "href": "/services/" }
+      ]
+    },
+    {
+      "title": "Resources",
+      "links": [
+        { "label": "Insights", "href": "/insights/" },
+        { "label": "Case Studies", "href": "/work/" },
+        { "label": "FAQ", "href": "/contact/" }
+      ]
+    }
+  ],
+  "legal": [
+    { "label": "Privacy Policy", "href": "/privacy-policy/" },
+    { "label": "Terms of Service", "href": "/terms/" },
+    { "label": "Cookies", "href": "/cookies/" }
+  ]
+}

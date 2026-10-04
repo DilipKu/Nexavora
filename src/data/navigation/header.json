@@ -1,0 +1,42 @@
+{
+  "menu": [
+    {
+      "label": "Services",
+      "href": "/services/",
+      "children": [
+        { "label": "Web Development", "href": "/services/web-development/" },
+        { "label": "Mobile App Development", "href": "/services/mobile-development/" },
+        { "label": "Product Engineering", "href": "/services/product-engineering/" },
+        { "label": "AI & Automation", "href": "/services/ai-automation/" },
+        { "label": "Cloud & Backend", "href": "/services/cloud-backend/" },
+        { "label": "UI/UX Design", "href": "/services/ui-ux/" }
+      ]
+    },
+    {
+      "label": "Solutions",
+      "href": "/solutions/",
+      "children": [
+        { "label": "FinTech", "href": "/industries/fintech/" },
+        { "label": "Healthcare", "href": "/industries/healthcare/" },
+        { "label": "E-commerce", "href": "/industries/ecommerce/" },
+        { "label": "Enterprise", "href": "/industries/enterprise/" }
+      ]
+    },
+    { "label": "Work", "href": "/work/" },
+    { "label": "About", "href": "/about/" },
+    { "label": "Insights", "href": "/insights/" }
+  ],
+  "cta": {
+    "label": "Let's Talk",
+    "href": "/contact/",
+    "prefix": "",
+    "hoverLabel": "Start a Project"
+  },
+  "aria": {
+    "menuOpen": "Open navigation menu",
+    "menuClose": "Close navigation menu",
+    "menuExpand": "Expand submenu",
+    "navMain": "Main navigation",
+    "drawer": "Navigation menu"
+  }
+}

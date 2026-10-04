@@ -1,0 +1,50 @@
+{
+  "title": "What we build",
+  "description": "From digital products to intelligent platforms, we combine product thinking, engineering and modern technology to build solutions that scale.",
+  "linkLabel": "View all services",
+  "linkHref": "/services/",
+  "items": [
+    {
+      "number": "01.",
+      "icon": "browser",
+      "title": "Web Development",
+      "description": "Modern, scalable web applications and platforms built for performance and growth.",
+      "tech": "React · Next.js · TypeScript"
+    },
+    {
+      "number": "02.",
+      "icon": "device-mobile",
+      "title": "Mobile App Development",
+      "description": "High-quality native and cross-platform mobile experiences for iOS and Android.",
+      "tech": "React Native · Swift · Kotlin"
+    },
+    {
+      "number": "03.",
+      "icon": "rocket",
+      "title": "Product Engineering",
+      "description": "From MVP to production-grade platforms, we turn ideas into reliable digital products.",
+      "tech": "Architecture · Scalability · APIs"
+    },
+    {
+      "number": "04.",
+      "icon": "robot",
+      "title": "AI & Automation",
+      "description": "AI-powered applications, intelligent workflows and automation designed around real business needs.",
+      "tech": "LLMs · Automation · Python"
+    },
+    {
+      "number": "05.",
+      "icon": "cloud",
+      "title": "Cloud & Backend",
+      "description": "Scalable APIs, databases, cloud infrastructure and integrations that power modern products.",
+      "tech": "AWS · PostgreSQL · Node.js"
+    },
+    {
+      "number": "06.",
+      "icon": "palette",
+      "title": "UI/UX & Product Design",
+      "description": "Intuitive digital experiences designed around users, business goals and measurable outcomes.",
+      "tech": "Design Systems · Prototyping"
+    }
+  ]
+}

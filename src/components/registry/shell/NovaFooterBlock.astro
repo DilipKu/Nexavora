@@ -1,0 +1,90 @@
+---
+import Text from "@components/ui/atoms/Text.astro";
+import Button from "@components/ui/atoms/Button.astro";
+import { getNovaCopy, getNovaNavigationPath, type NovaLocale } from "@utils/nova-i18n";
+import { withSiteBase } from "@utils/site-path";
+
+interface Props {
+  locale?: NovaLocale;
+}
+
+const { locale = "en" } = Astro.props as Props;
+const copy = getNovaCopy(locale).footer;
+const footerLinks = copy.footerLinks.map((link) => ({ ...link, href: getNovaNavigationPath(link.href, locale) }));
+const legalLinks = copy.legalLinks.map((link) => ({ ...link, href: getNovaNavigationPath(link.href, locale) }));
+const backgroundImage = withSiteBase('/assets/images/t001-nova/t001-nova-cta-mountains@1920.webp');
+
+---
+
+<footer id="contact" style={`background-image: url('${backgroundImage}')`} class="relative overflow-hidden rounded-t-[var(--rounded-lg)] bg-brand-dark bg-cover bg-center bg-no-repeat text-brand-light">
+  <div class="absolute inset-0 bg-brand-dark/75" aria-hidden="true"></div>
+
+  <!-- Gradient accent line -->
+  <div class="absolute inset-x-0 top-0 h-1" style="background: var(--nexvora-gradient);" aria-hidden="true"></div>
+
+  <div class="ui-container relative z-10 mx-auto grid w-[min(100%-2rem,80rem)] gap-10 py-16 pb-8 sm:py-20">
+    <div class="mx-auto max-w-5xl text-center">
+      <p class="mb-4 flex items-center justify-center gap-4 text-xs font-bold uppercase tracking-[0.14em]" style="color: var(--color-brand-accent);">
+        <span class="h-px w-10" style="background: var(--color-brand-accent); opacity: 0.7;" aria-hidden="true"></span>
+        <span>{copy.eyebrow}</span>
+        <span class="h-px w-10" style="background: var(--color-brand-accent); opacity: 0.7;" aria-hidden="true"></span>
+      </p>
+      <h2 class="m-0 max-w-none text-[clamp(2.5rem,7vw,5.5rem)] leading-[0.95] tracking-[-0.06em] text-brand-light lg:whitespace-nowrap">{copy.heading}</h2>
+      <p class="mx-auto mt-6 max-w-xl text-[clamp(1rem,1.5vw,1.2rem)] leading-[1.55] text-brand-light/80">{copy.description}</p>
+      <div class="mx-auto mt-10 flex w-full max-w-xs flex-col justify-center gap-3 sm:mt-12 sm:max-w-none sm:flex-row">
+        <Button href={getNovaNavigationPath(copy.primaryHref, locale)} variant="accent" class="min-h-11 w-full sm:w-auto">{copy.primaryLabel}</Button>
+        <Button href={getNovaNavigationPath(copy.secondaryHref, locale)} variant="outline" class="min-h-11 w-full !border-brand-light/65 !bg-brand-dark/35 !text-brand-light sm:w-auto">{copy.secondaryLabel}</Button>
+      </div>
+    </div>
+
+    <!-- Footer columns -->
+    <div class="grid grid-cols-2 gap-8 border-t border-brand-light/15 pt-10 sm:grid-cols-4">
+      <div>
+        <p class="mb-4 text-xs font-bold uppercase tracking-[0.12em]" style="color: var(--color-brand-accent);">NEXVORA</p>
+        <p class="text-sm leading-relaxed text-brand-light/70">Building Tomorrow's Digital Experience</p>
+      </div>
+      <div>
+        <p class="mb-3 text-xs font-semibold uppercase tracking-[0.1em] text-brand-light/50">Company</p>
+        <nav aria-label="Company links" class="flex flex-col gap-2">
+          {[
+            { label: "About", href: "/about/" },
+            { label: "Work", href: "/work/" },
+            { label: "Careers", href: "/careers/" },
+            { label: "Contact", href: "/contact/" }
+          ].map((link) => <a href={link.href} class="text-sm text-brand-light/70 transition-colors hover:text-brand-light">{link.label}</a>)}
+        </nav>
+      </div>
+      <div>
+        <p class="mb-3 text-xs font-semibold uppercase tracking-[0.1em] text-brand-light/50">Services</p>
+        <nav aria-label="Services links" class="flex flex-col gap-2">
+          {[
+            { label: "Web Development", href: "/services/web-development/" },
+            { label: "Mobile Apps", href: "/services/mobile-development/" },
+            { label: "Product Engineering", href: "/services/product-engineering/" },
+            { label: "AI & Automation", href: "/services/ai-automation/" },
+            { label: "Cloud & Backend", href: "/services/cloud-backend/" }
+          ].map((link) => <a href={link.href} class="text-sm text-brand-light/70 transition-colors hover:text-brand-light">{link.label}</a>)}
+        </nav>
+      </div>
+      <div>
+        <p class="mb-3 text-xs font-semibold uppercase tracking-[0.1em] text-brand-light/50">Resources</p>
+        <nav aria-label="Resources links" class="flex flex-col gap-2">
+          {[
+            { label: "Insights", href: "/insights/" },
+            { label: "Case Studies", href: "/work/" },
+            { label: "FAQ", href: "/#faq" }
+          ].map((link) => <a href={link.href} class="text-sm text-brand-light/70 transition-colors hover:text-brand-light">{link.label}</a>)}
+        </nav>
+      </div>
+    </div>
+
+    <div class="flex flex-col items-center gap-4 border-t border-brand-light/15 pt-8 text-center text-brand-light/60 sm:flex-row sm:items-center sm:justify-between sm:text-left">
+      <Text tag="span" variant="feature-body-sm">
+        {copy.copyright}
+      </Text>
+      <nav aria-label={copy.ariaLegal} class="flex flex-wrap justify-center gap-x-6 gap-y-2 sm:justify-end">
+        {legalLinks.map((link) => <a href={link.href} class="inline-flex min-h-11 items-center text-xs text-brand-light/60 transition-colors hover:text-brand-light sm:min-h-0">{link.label}</a>)}
+      </nav>
+    </div>
+  </div>
+</footer>

@@ -1,0 +1,70 @@
+{
+  "title": "Reviews that say more",
+  "description": "What our clients say about working with NEXVORA Technologies.",
+  "avatarAltPrefix": "Photo of",
+  "items": [
+    {
+      "quote": "NEXVORA delivered a platform that genuinely transformed how we operate. The engineering quality and attention to product detail was exceptional throughout.",
+      "author": "Sarah M.",
+      "initials": "SM",
+      "role": "CTO, Enterprise Client",
+      "avatar": "https://i.pravatar.cc/150?u=sarah-cto"
+    },
+    {
+      "quote": "From the first discovery session to launch, the team demonstrated real product thinking — not just coding. They understood our business challenges and built around them.",
+      "author": "James R.",
+      "initials": "JR",
+      "role": "Product Lead, Scale-up Client",
+      "avatar": "https://i.pravatar.cc/150?u=james-product"
+    },
+    {
+      "quote": "Our mobile application launched on time, on budget, and has received outstanding reviews from users. NEXVORA's React Native expertise is first-rate.",
+      "author": "Ana T.",
+      "initials": "AT",
+      "role": "Founder & CEO, Startup Client",
+      "avatar": "https://i.pravatar.cc/150?u=ana-founder"
+    },
+    {
+      "quote": "The AI automation they built reduced our manual processing time by over 70%. It continues to evolve and improve every quarter.",
+      "author": "David K.",
+      "initials": "DK",
+      "role": "Head of Operations, Enterprise Client",
+      "avatar": "https://i.pravatar.cc/150?u=david-ops"
+    },
+    {
+      "quote": "What impressed me most was how they balanced speed with code quality. We moved fast, but the architecture they designed has scaled without issues.",
+      "author": "Laura B.",
+      "initials": "LB",
+      "role": "VP Engineering, FinTech Client",
+      "avatar": "https://i.pravatar.cc/150?u=laura-vp"
+    },
+    {
+      "quote": "They became a genuine extension of our team — not just a vendor. Long-term partnership is what differentiates NEXVORA from everyone else we have worked with.",
+      "author": "Michael S.",
+      "initials": "MS",
+      "role": "Director of Technology, Enterprise Client",
+      "avatar": "https://i.pravatar.cc/150?u=michael-dir"
+    },
+    {
+      "quote": "The platform they built for us has become a genuine competitive advantage. Our clients regularly mention how much better our digital experience is compared to our competitors.",
+      "author": "Rachel O.",
+      "initials": "RO",
+      "role": "Co-Founder, Healthcare Client",
+      "avatar": "https://i.pravatar.cc/150?u=rachel-health"
+    },
+    {
+      "quote": "NEXVORA understood from day one that we needed something scalable, not just functional. The decisions they made in architecture paid dividends 12 months later.",
+      "author": "Tom W.",
+      "initials": "TW",
+      "role": "Head of Product, E-commerce Client",
+      "avatar": "https://i.pravatar.cc/150?u=tom-ecom"
+    },
+    {
+      "quote": "Honest, transparent and technically excellent. Three qualities that are hard to find together — NEXVORA delivers all three.",
+      "author": "Priya N.",
+      "initials": "PN",
+      "role": "CIO, Enterprise Client",
+      "avatar": "https://i.pravatar.cc/150?u=priya-cio"
+    }
+  ]
+}

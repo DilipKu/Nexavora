@@ -1,0 +1,34 @@
+{
+  "title": "Frequently asked questions",
+  "description": "Common questions about working with NEXVORA Technologies — from starting a project to long-term partnership.",
+  "items": [
+    {
+      "q": "How do you start a new project?",
+      "a": "We begin with a discovery session to understand your business goals, technical requirements, and user needs. From there, we define scope, architecture and a clear roadmap before a single line of code is written."
+    },
+    {
+      "q": "How long does a typical project take?",
+      "a": "Project timelines vary based on scope and complexity. An MVP typically takes 6–12 weeks. Larger platforms may take 3–6 months. We provide realistic timelines during discovery and keep you informed throughout."
+    },
+    {
+      "q": "Do you work with startups?",
+      "a": "Yes. We work with startups from early-stage MVP through to growth-stage scaling. We understand the pace and constraints of early-stage companies and adapt our process accordingly."
+    },
+    {
+      "q": "Can you work with an existing development team?",
+      "a": "Absolutely. We integrate seamlessly with in-house teams — whether that means leading development, augmenting capacity, or providing specialist expertise in areas like AI, mobile or cloud infrastructure."
+    },
+    {
+      "q": "Do you provide ongoing maintenance and support?",
+      "a": "Yes. We offer ongoing support, performance monitoring, feature development and platform evolution post-launch. We believe technology relationships extend well beyond launch."
+    },
+    {
+      "q": "Can you build an MVP and scale it later?",
+      "a": "Yes — and we strongly recommend this approach for new products. We architect MVPs with future scale in mind, so expanding the platform doesn't require rebuilding the foundation."
+    },
+    {
+      "q": "What technologies do you work with?",
+      "a": "Our core stack includes React, Next.js, React Native, Node.js, Python, PostgreSQL, Firebase, Supabase and cloud platforms including AWS. For AI projects we work with modern LLMs and AI APIs."
+    }
+  ]
+}

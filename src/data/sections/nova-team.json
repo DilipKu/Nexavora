@@ -1,0 +1,17 @@
+{
+  "title": "People behind the technology",
+  "description": "Great products are built by people who combine engineering discipline, product thinking and curiosity. We are a team of engineers, designers and technologists focused on building meaningful digital products.",
+  "image": "/assets/images/t001-nova/t001-nova-about-team.webp",
+  "imageAlt": "NEXVORA Technologies — Engineering team",
+  "checks": ["Engineering-first mindset", "Product-focused approach", "Long-term partnerships"],
+  "teamCount": "15+",
+  "teamLabel": "Engineers & Designers",
+  "teamAriaLabel": "Our team",
+  "teamAvatars": [
+    { "src": "/assets/images/t001-nova/t001-nova-avatar-01@220.webp", "alt": "NEXVORA team member" },
+    { "src": "/assets/images/t001-nova/t001-nova-avatar-02@220.webp", "alt": "NEXVORA team member" },
+    { "src": "/assets/images/t001-nova/t001-nova-avatar-03@220.webp", "alt": "NEXVORA team member" }
+  ],
+  "buttonLabel": "About NEXVORA",
+  "buttonHref": "/about/"
+}

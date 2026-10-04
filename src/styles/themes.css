@@ -1,0 +1,128 @@
+/* NEXVORA Technologies — Brand Design System */
+/* Deep Navy / Technology Blue / Cyan / Green palette */
+
+:root {
+  /* === SURFACE COLORS === */
+  --color-surface: #ffffff;
+  --color-surface-dim: #F8F9FB;
+  --color-surface-bright: #ffffff;
+  --color-surface-container-lowest: #F8F9FB;
+  --color-surface-container-low: #EEF1F5;
+  --color-surface-container: #E2E8F0;
+  --color-surface-container-high: #CBD5E0;
+  --color-surface-container-highest: #A0AEC0;
+  --color-on-surface: #101828;
+  --color-on-surface-variant: #667085;
+  --color-outline: #D0D5DD;
+  --color-outline-variant: #E4E7EC;
+  --color-surface-tint: #0878E8;
+
+  /* === BRAND COLORS === */
+  --color-primary: #101828;
+  --color-accent: #0878E8;
+  --color-on-primary: #ffffff;
+  --color-primary-container: #EEF1F5;
+  --color-on-primary-container: #101828;
+  --color-secondary: #667085;
+  --color-on-secondary: #ffffff;
+  --color-secondary-container: #F8F9FB;
+  --color-on-secondary-container: #101828;
+  --color-tertiary: #16C7D9;
+  --color-on-tertiary: #071B3A;
+  --color-tertiary-container: #E0F7FA;
+  --color-on-tertiary-container: #071B3A;
+
+  /* === SEMANTIC COLORS === */
+  --color-error: #D92D20;
+  --color-on-error: #ffffff;
+  --color-error-container: #FEE4E2;
+  --color-on-error-container: #7A271A;
+  --color-success: #17C98B;
+  --color-on-success: #ffffff;
+  --color-success-container: #D1FAE5;
+  --color-on-success-container: #064E3B;
+  --color-warning: #DC6803;
+  --color-on-warning: #ffffff;
+  --color-warning-container: #FEF3C7;
+  --color-on-warning-container: #78350F;
+  --color-info: #0878E8;
+  --color-on-info: #ffffff;
+  --color-info-container: #EFF6FF;
+  --color-on-info-container: #1E3A8A;
+
+  /* === BACKGROUND === */
+  --color-background: #ffffff;
+  --color-on-background: #101828;
+
+  /* === NEXVORA BRAND TOKENS === */
+  --color-brand-primary: #0878E8;
+  --color-brand-accent: #16C7D9;
+  --color-brand-green: #17C98B;
+  --color-brand-dark: #071B3A;
+  --color-brand-navy: #0B132B;
+  --color-brand-light: #ffffff;
+  --color-brand-cream: #F8F9FB;
+
+  /* === NEXVORA GRADIENT === */
+  --nexvora-gradient: linear-gradient(135deg, #0878E8 0%, #16C7D9 50%, #17C98B 100%);
+  --nexvora-gradient-text: linear-gradient(135deg, #0878E8 0%, #16C7D9 60%, #17C98B 100%);
+  --nexvora-glow: 0 0 60px rgba(8, 120, 232, 0.15), 0 0 120px rgba(22, 199, 217, 0.08);
+
+  /* === SPACING === */
+  --spacing-base: 4px;
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 32px;
+  --spacing-xl: 64px;
+  --spacing-container-px: clamp(1rem, 4vw, 4rem);
+  --spacing-section-py: clamp(4rem, 8vw, 7.5rem);
+
+  /* === BORDER RADIUS === */
+  --rounded-sm: 0.375rem;
+  --ui-radius-sm: 0.375rem;
+  --rounded-base: 0.625rem;
+  --ui-radius-base: 0.625rem;
+  --rounded-md: 0.875rem;
+  --ui-radius-md: 0.875rem;
+  --rounded-lg: 1.25rem;
+  --ui-radius-lg: 1.25rem;
+  --rounded-xl: 1.75rem;
+  --ui-radius-xl: 1.75rem;
+  --rounded-full: 9999px;
+  --ui-radius-full: 9999px;
+
+  /* === ELEVATION === */
+  --ui-elevation-soft: 0 1px 3px rgba(16, 24, 40, 0.06), 0 8px 24px -4px rgba(16, 24, 40, 0.08);
+  --ui-elevation-strong: 0 4px 8px rgba(16, 24, 40, 0.06), 0 24px 64px -8px rgba(16, 24, 40, 0.14);
+  --ui-elevation-card: 0 1px 2px rgba(16, 24, 40, 0.04), 0 4px 16px -2px rgba(16, 24, 40, 0.06);
+
+  /* === TEXT ON LIGHT/DARK === */
+  --ui-text-on-light: #101828;
+  --ui-text-on-light-subtle: rgba(16, 24, 40, 0.60);
+  --ui-text-on-dark: #ffffff;
+  --ui-text-on-dark-subtle: rgba(255, 255, 255, 0.72);
+
+  /* === TYPOGRAPHY === */
+  --ui-type-lead-tracking: -0.01em;
+  --ui-type-lead-leading: 1.55;
+  --ui-type-body-leading: 1.65;
+  --ui-type-heading-tracking: -0.04em;
+
+  /* === BUTTONS === */
+  --ui-button-radius: 0.5rem;
+  --ui-button-hover-effect: lift;
+
+  /* === BACKGROUNDS === */
+  --ui-bg-base: var(--color-brand-cream);
+  --ui-bg-page: #ffffff;
+  --ui-bg-surface: #ffffff;
+  --ui-bg-accent: var(--color-brand-primary);
+
+  /* === FONTS === */
+  --font-sans: Satoshi, 'Inter', system-ui, sans-serif;
+  --font-heading: Satoshi, 'Inter', system-ui, sans-serif;
+
+  /* === ANIMATION === */
+  --animate-scroll: scroll 36s linear infinite;
+}

@@ -1,0 +1,12 @@
+{
+  "seo": {
+    "title": "Contact Us | NEXVORA Technologies",
+    "description": "Get in touch with NEXVORA Technologies to start your next digital engineering project."
+  },
+  "heading": "Let's Build Something Great Together",
+  "sections": [
+    { "id": "navbar", "variant": "floating" },
+    { "id": "faq3", "variant": "default" },
+    { "id": "footer", "variant": "nova" }
+  ]
+}

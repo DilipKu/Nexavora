@@ -1,0 +1,18 @@
+{
+  "eyebrow": "ENGINEERING · DESIGN · TECHNOLOGY",
+  "heading": "Technology that moves",
+  "headingAccent": "businesses forward.",
+  "description": "We design, engineer and scale digital products, platforms and intelligent solutions for businesses ready to move forward.",
+  "primaryCTA": { "label": "Start a Project", "href": "/contact/" },
+  "secondaryCTA": { "label": "Explore Our Work", "href": "/work/" },
+  "trustedBy": "Built with",
+  "trustItems": ["React", "Next.js", "Node.js", "Python", "AI"],
+  "image": "/assets/images/nexvora_hero.jpg",
+  "imageAlt": "NEXVORA Technologies — Digital Engineering Company",
+  "stats": [
+    { "value": "25+", "label": "Digital Products" },
+    { "value": "10+", "label": "Industries" },
+    { "value": "50+", "label": "Projects Delivered" },
+    { "value": "95%", "label": "Client Retention" }
+  ]
+}

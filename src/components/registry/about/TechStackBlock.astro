@@ -1,0 +1,46 @@
+---
+import Section from "@components/ui/layout/Section.astro";
+import Container from "@components/ui/layout/Container.astro";
+import Heading from "@components/ui/atoms/Heading.astro";
+import Text from "@components/ui/atoms/Text.astro";
+import jsonData from "@data/sections/tech-stack.json";
+
+interface TechItem {
+  name: string;
+  category: string;
+}
+
+interface Props {
+  title?: string;
+  tagline?: string;
+  description?: string;
+  technologies?: TechItem[];
+  class?: string;
+}
+
+const props = Astro.props as Props;
+const title = props.title ?? jsonData.title;
+const tagline = props.tagline ?? jsonData.tagline;
+const description = props.description ?? jsonData.description;
+const technologies = props.technologies ?? jsonData.technologies;
+---
+
+<Section id="tech-stack" tone="page" class:list={["py-14 lg:py-20 bg-surface-container-low text-brand-dark relative border-y border-black/5 dark:border-white/10", props.class]}>
+  <Container class="w-full max-w-none px-[clamp(1.25rem,4vw,4rem)]">
+    <div class="mb-10 text-center max-w-2xl mx-auto">
+      {tagline && <Text tag="p" variant="accent-label" class="mb-2 font-semibold tracking-[0.18em]">{tagline}</Text>}
+      <Heading tag="h2" variant="section-title" class="mb-3 text-[clamp(1.75rem,3vw,2.75rem)] font-bold tracking-tight">{title}</Heading>
+      {description && <Text variant="lead" class="text-sm opacity-80 sm:text-base">{description}</Text>}
+    </div>
+
+    <!-- Clean, multi-column grid of technology pills -->
+    <div class="grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 lg:gap-4 max-w-6xl mx-auto">
+      {technologies.map((tech) => (
+        <div class="group flex items-center justify-between rounded-xl border border-black/5 bg-surface px-4 py-3 shadow-xs transition-all duration-300 hover:border-brand-accent/40 hover:shadow-md dark:border-white/10">
+          <span class="font-heading text-sm font-bold text-brand-dark dark:text-white group-hover:text-brand-accent transition-colors">{tech.name}</span>
+          <span class="text-[0.68rem] font-medium opacity-60 bg-brand-accent/10 px-2 py-0.5 rounded text-brand-dark dark:text-brand-accent">{tech.category}</span>
+        </div>
+      ))}
+    </div>
+  </Container>
+</Section>

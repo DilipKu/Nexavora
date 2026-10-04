@@ -1,0 +1,32 @@
+{
+  "title": "From idea to impact",
+  "tagline": "OUR ENGINEERING PROCESS",
+  "description": "A structured, battle-tested process that takes digital products from initial discovery to high-impact production scale.",
+  "steps": [
+    {
+      "number": "01",
+      "title": "Discover",
+      "description": "Understand the business, users, goals and technical requirements."
+    },
+    {
+      "number": "02",
+      "title": "Design",
+      "description": "Translate requirements into product experiences and technical architecture."
+    },
+    {
+      "number": "03",
+      "title": "Build",
+      "description": "Engineer the product using modern technologies and scalable practices."
+    },
+    {
+      "number": "04",
+      "title": "Launch",
+      "description": "Test, deploy and validate the product in real-world environments."
+    },
+    {
+      "number": "05",
+      "title": "Scale",
+      "description": "Optimize, improve and expand as the business grows."
+    }
+  ]
+}

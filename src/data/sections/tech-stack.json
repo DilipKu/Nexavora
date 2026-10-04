@@ -1,0 +1,25 @@
+{
+  "title": "Technologies we're working with",
+  "tagline": "MODERN STACK",
+  "description": "We work across modern technologies to build scalable, reliable and future-ready digital products.",
+  "technologies": [
+    { "name": "React", "category": "Frontend" },
+    { "name": "React Native", "category": "Mobile" },
+    { "name": "Next.js", "category": "Frontend" },
+    { "name": "Node.js", "category": "Backend" },
+    { "name": "TypeScript", "category": "Language" },
+    { "name": "JavaScript", "category": "Language" },
+    { "name": "Python", "category": "AI / Backend" },
+    { "name": "Java", "category": "Backend" },
+    { "name": "Kotlin", "category": "Mobile" },
+    { "name": "Swift", "category": "Mobile" },
+    { "name": "AI & LLMs", "category": "Intelligence" },
+    { "name": "REST APIs", "category": "Architecture" },
+    { "name": "PostgreSQL", "category": "Database" },
+    { "name": "MySQL", "category": "Database" },
+    { "name": "Firebase", "category": "Cloud" },
+    { "name": "Supabase", "category": "Cloud" },
+    { "name": "AWS", "category": "Cloud" },
+    { "name": "Cloud Native", "category": "Infrastructure" }
+  ]
+}

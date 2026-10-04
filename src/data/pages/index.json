@@ -1,0 +1,24 @@
+{
+  "seo": {
+    "title": "NEXVORA Technologies | Building Tomorrow's Digital Experience",
+    "description": "NEXVORA Technologies designs and engineers modern digital products, mobile applications, scalable platforms and intelligent technology solutions for ambitious businesses."
+  },
+  "heading": "Technology that moves businesses forward.",
+  "sections": [
+    { "id": "navbar", "variant": "floating" },
+    { "id": "hero", "variant": "nova" },
+    { "id": "techStack", "variant": "default" },
+    { "id": "novaServices", "variant": "default" },
+    { "id": "portfolio", "variant": "nova" },
+    { "id": "whyNexvora", "variant": "default" },
+    { "id": "processSteps", "variant": "default" },
+    { "id": "industriesGrid", "variant": "default" },
+    { "id": "heroStats", "variant": "default" },
+    { "id": "novaTeam", "variant": "default" },
+    { "id": "testimonials", "variant": "v2" },
+    { "id": "insights", "variant": "default" },
+    { "id": "faq3", "variant": "default" },
+    { "id": "cta", "variant": "default" },
+    { "id": "footer", "variant": "nova" }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "seo": {
+    "title": "Insights & Articles | NEXVORA Technologies",
+    "description": "Tech insights, engineering best practices, and enterprise technology trends from NEXVORA Technologies."
+  },
+  "heading": "Technology Insights & Engineering",
+  "sections": [
+    { "id": "navbar", "variant": "floating" },
+    { "id": "faq3", "variant": "default" },
+    { "id": "footer", "variant": "nova" }
+  ]
+}

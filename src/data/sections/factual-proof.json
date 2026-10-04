@@ -1,0 +1,22 @@
+{
+  "title": "Built around real business needs.",
+  "tagline": "ENGINEERING PRINCIPLES",
+  "description": "We combine product thinking, engineering discipline and modern technology to build digital experiences designed for real-world business needs.",
+  "items": [
+    {
+      "number": "01",
+      "title": "Engineering-first",
+      "description": "Technology decisions built around maintainability, scalability and clean architecture."
+    },
+    {
+      "number": "02",
+      "title": "Product-minded",
+      "description": "We design and build with commercial outcomes and user experience at the core."
+    },
+    {
+      "number": "03",
+      "title": "Built to scale",
+      "description": "Digital platforms engineered to adapt and perform seamlessly as your business expands."
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+---
+import Section from "@components/ui/layout/Section.astro";
+import Container from "@components/ui/layout/Container.astro";
+import Heading from "@components/ui/atoms/Heading.astro";
+import Text from "@components/ui/atoms/Text.astro";
+import Icon from "@components/ui/atoms/Icon.astro";
+import jsonData from "@data/sections/industries.json";
+
+interface Industry {
+  name: string;
+  icon?: string;
+  description: string;
+}
+
+interface Props {
+  title?: string;
+  tagline?: string;
+  description?: string;
+  items?: Industry[];
+  class?: string;
+}
+
+const props = Astro.props as Props;
+const title = props.title ?? jsonData.title;
+const tagline = props.tagline ?? jsonData.tagline;
+const description = props.description ?? jsonData.description;
+const items = props.items ?? jsonData.items;
+---
+
+<Section id="industries" tone="page" class:list={["py-16 lg:py-24 bg-surface-container-low text-brand-dark relative", props.class]}>
+  <Container class="w-full max-w-none px-[clamp(1.25rem,4vw,4rem)]">
+    <div class="mb-12 max-w-3xl lg:mb-16">
+      {tagline && <Text tag="p" variant="accent-label" class="mb-3 font-semibold tracking-[0.18em]">{tagline}</Text>}
+      <Heading tag="h2" variant="section-title" class="mb-4 text-[clamp(2rem,3.5vw,3.25rem)] font-bold tracking-tight">{title}</Heading>
+      {description && <Text variant="lead" class="text-base opacity-85 sm:text-lg">{description}</Text>}
+    </div>
+
+    <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 lg:gap-6">
+      {items.map((item) => (
+        <div class="group relative flex flex-col justify-between rounded-xl border border-black/5 bg-surface p-5 transition-all duration-300 hover:-translate-y-1 hover:border-brand-accent/40 hover:shadow-md dark:border-white/10">
+          <div>
+            <div class="mb-3 flex size-10 items-center justify-center rounded-lg bg-brand-accent/15 text-brand-accent transition-colors group-hover:bg-brand-accent group-hover:text-brand-dark">
+              <Icon name={item.icon ?? "buildings"} class="size-5" />
+            </div>
+            <Heading tag="h3" variant="feature-title" class="mb-1.5 text-base font-bold text-brand-dark dark:text-white">
+              {item.name}
+            </Heading>
+            <Text variant="body" class="text-xs leading-relaxed opacity-75">
+              {item.description}
+            </Text>
+          </div>
+        </div>
+      ))}
+    </div>
+  </Container>
+</Section>

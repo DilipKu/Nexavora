@@ -1,0 +1,13 @@
+{
+  "seo": {
+    "title": "About Us | NEXVORA Technologies",
+    "description": "Learn about NEXVORA Technologies, our engineering principles, team, and commitment to building tomorrow's digital experience."
+  },
+  "heading": "About NEXVORA Technologies",
+  "sections": [
+    { "id": "navbar", "variant": "floating" },
+    { "id": "novaTeam", "variant": "default" },
+    { "id": "testimonials", "variant": "v2" },
+    { "id": "footer", "variant": "nova" }
+  ]
+}

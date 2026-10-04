@@ -1,0 +1,15 @@
+{
+  "seo": {
+    "title": "NEXVORA Technologies | Our Work & Digital Products",
+    "description": "Explore digital products and platforms built by NEXVORA Technologies across commerce, media and modern digital experiences."
+  },
+  "heading": "Technology we've brought to life",
+  "sections": [
+    { "id": "navbar", "variant": "floating" },
+    { "id": "portfolio", "variant": "nova" },
+    { "id": "techStack", "variant": "default" },
+    { "id": "whyNexvora", "variant": "default" },
+    { "id": "factualProof", "variant": "default" },
+    { "id": "footer", "variant": "nova" }
+  ]
+}

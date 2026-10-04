@@ -1,0 +1,366 @@
+{
+  "pl": {
+    "page": {
+      "title": "NEXVORA Technologies | Building Tomorrow's Digital Experience",
+      "description": "NEXVORA Technologies designs and engineers modern digital products, mobile applications, scalable platforms and intelligent technology solutions.",
+      "heading": "Technology that moves businesses forward."
+    },
+    "demoBanner": {
+      "label": "",
+      "downloadLabel": "",
+      "downloadHref": "",
+      "customizeLabel": "",
+      "customizeHref": ""
+    },
+    "navigation": {
+      "menu": [
+        { "label": "Services", "href": "/services/" },
+        { "label": "Solutions", "href": "/solutions/" },
+        { "label": "Work", "href": "/work/" },
+        { "label": "About", "href": "/about/" },
+        { "label": "Insights", "href": "/insights/" }
+      ],
+      "cta": {
+        "label": "Let's Talk",
+        "hoverLabel": "Start a Project",
+        "href": "/contact/"
+      },
+      "aria": {
+        "menuOpen": "Open navigation menu",
+        "menuClose": "Close menu",
+        "menuExpand": "Expand submenu",
+        "navMain": "Main navigation",
+        "drawer": "Navigation menu"
+      },
+      "languageLabel": "Choose language"
+    },
+    "sections": {
+      "nova-hero-wireframe": {
+        "eyebrow": "ENGINEERING · DESIGN · TECHNOLOGY",
+        "heading": "Technology that moves",
+        "headingAccent": "businesses forward.",
+        "description": "We design, engineer and scale digital products, platforms and intelligent solutions for businesses ready to move forward.",
+        "primaryCTA": { "label": "Start a Project", "href": "/contact/" },
+        "secondaryCTA": { "label": "Explore Our Work", "href": "/work/" },
+        "trustedBy": "Built with",
+        "trustItems": ["React", "Next.js", "Node.js", "Python", "AI"],
+        "image": "/assets/images/nexvora_hero.jpg",
+        "imageAlt": "NEXVORA Technologies — Digital Engineering Company",
+        "stats": [
+          { "value": "25+", "label": "Digital Products" },
+          { "value": "10+", "label": "Industries" },
+          { "value": "50+", "label": "Projects Delivered" },
+          { "value": "95%", "label": "Client Retention" }
+        ]
+      },
+      "nova-projects": {
+        "title": "Technology we've brought to life",
+        "description": "Explore selected digital products, platforms and experiences we've designed and engineered.",
+        "linkLabel": "View all work",
+        "linkHref": "/work/",
+        "items": [
+          {
+            "slug": "rtc-global-apparels",
+            "title": "RTC Global Apparels",
+            "category": "B2B Commerce / Fashion",
+            "description": "Digital commerce experience for a B2B apparel and garment sourcing business.",
+            "technologies": ["Web", "B2B", "Commerce", "Fashion"],
+            "image": "/assets/images/projects/rtc-global-apparels.jpg",
+            "alt": "RTC Global Apparels — B2B Commerce Platform by NEXVORA Technologies",
+            "url": "https://rtcglobalapparels.com/",
+            "ctaLabel": "View Project",
+            "featured": true
+          },
+          {
+            "slug": "anapurna-sales",
+            "title": "Anapurna Sales",
+            "category": "B2B Commerce / Fashion",
+            "description": "Digital commerce experience for a B2B fashion and wholesale clothing business.",
+            "technologies": ["Web", "B2B", "Commerce", "Fashion"],
+            "image": "/assets/images/projects/anapurna-sales.jpg",
+            "alt": "Anapurna Sales — Wholesale Commerce Platform by NEXVORA Technologies",
+            "url": "https://anapurnasales.com/",
+            "ctaLabel": "View Project",
+            "featured": false
+          },
+          {
+            "slug": "media24x7-india",
+            "title": "Media24x7 India",
+            "category": "Media / Digital Platform",
+            "description": "Digital platform for Media24x7 India, designed to present its media and digital content experience.",
+            "technologies": ["Web", "Digital Platform", "Media"],
+            "image": "/assets/images/projects/media24x7-india.jpg",
+            "alt": "Media24x7 India — Digital Media Platform by NEXVORA Technologies",
+            "url": "https://media24x7india.com/",
+            "ctaLabel": "View Project",
+            "featured": false
+          }
+        ]
+      },
+      "nova-services": {
+        "title": "What we build",
+        "description": "From digital products to intelligent platforms, we combine product thinking, engineering and modern technology to build solutions that scale.",
+        "linkLabel": "View all services",
+        "linkHref": "/services/",
+        "items": [
+          { "number": "01.", "icon": "browser", "title": "Web Development", "description": "Modern, scalable web applications and platforms built for performance and growth." },
+          { "number": "02.", "icon": "device-mobile", "title": "Mobile App Development", "description": "High-quality native and cross-platform mobile experiences for iOS and Android." },
+          { "number": "03.", "icon": "rocket", "title": "Product Engineering", "description": "From MVP to production-grade platforms, we turn ideas into reliable digital products." },
+          { "number": "04.", "icon": "robot", "title": "AI & Automation", "description": "AI-powered applications, intelligent workflows and automation designed around real business needs." },
+          { "number": "05.", "icon": "cloud", "title": "Cloud & Backend", "description": "Scalable APIs, databases, cloud infrastructure and integrations that power modern products." },
+          { "number": "06.", "icon": "palette", "title": "UI/UX & Product Design", "description": "Intuitive digital experiences designed around users, business goals and measurable outcomes." }
+        ]
+      },
+      "nova-team": {
+        "title": "People behind the technology",
+        "description": "Great products are built by people who combine engineering discipline, product thinking and curiosity. We are a team of engineers, designers and technologists focused on building meaningful digital products.",
+        "image": "/assets/images/t001-nova/t001-nova-about-team.webp",
+        "imageAlt": "NEXVORA Technologies — Engineering team",
+        "checks": ["Engineering-first mindset", "Product-focused approach", "Long-term partnerships"],
+        "teamCount": "15+",
+        "teamLabel": "Engineers & Designers",
+        "teamAriaLabel": "Our team",
+        "teamAvatars": [
+          { "src": "/assets/images/t001-nova/t001-nova-avatar-01@220.webp", "alt": "NEXVORA team member" },
+          { "src": "/assets/images/t001-nova/t001-nova-avatar-02@220.webp", "alt": "NEXVORA team member" },
+          { "src": "/assets/images/t001-nova/t001-nova-avatar-03@220.webp", "alt": "NEXVORA team member" }
+        ],
+        "buttonLabel": "About NEXVORA",
+        "buttonHref": "/about/"
+      },
+      "faq3": {
+        "title": "Frequently asked questions",
+        "description": "Common questions about working with NEXVORA Technologies — from starting a project to long-term partnership.",
+        "tagline": "FAQ",
+        "items": [
+          { "q": "How do you start a new project?", "a": "We begin with a discovery session to understand your business goals, technical requirements, and user needs. From there, we define scope, architecture and a clear roadmap before a single line of code is written." },
+          { "q": "How long does a typical project take?", "a": "Project timelines vary based on scope and complexity. An MVP typically takes 6–12 weeks. Larger platforms may take 3–6 months. We provide realistic timelines during discovery and keep you informed throughout." },
+          { "q": "Do you work with startups?", "a": "Yes. We work with startups from early-stage MVP through to growth-stage scaling. We understand the pace and constraints of early-stage companies and adapt our process accordingly." },
+          { "q": "Can you work with an existing development team?", "a": "Absolutely. We integrate seamlessly with in-house teams — whether that means leading development, augmenting capacity, or providing specialist expertise in areas like AI, mobile or cloud infrastructure." },
+          { "q": "Do you provide ongoing maintenance and support?", "a": "Yes. We offer ongoing support, performance monitoring, feature development and platform evolution post-launch. We believe technology relationships extend well beyond launch." },
+          { "q": "Can you build an MVP and scale it later?", "a": "Yes — and we strongly recommend this approach for new products. We architect MVPs with future scale in mind, so expanding the platform doesn't require rebuilding the foundation." },
+          { "q": "What technologies do you work with?", "a": "Our core stack includes React, Next.js, React Native, Node.js, Python, PostgreSQL, Firebase, Supabase and cloud platforms including AWS. For AI projects we work with modern LLMs and AI APIs." }
+        ]
+      },
+      "testimonial-v2": {
+        "title": "Reviews that say more",
+        "description": "What our clients say about working with NEXVORA Technologies.",
+        "tagline": "Client reviews",
+        "avatarAltPrefix": "Photo of",
+        "items": [
+          { "quote": "NEXVORA delivered a platform that genuinely transformed how we operate. The engineering quality and attention to product detail was exceptional throughout.", "author": "Sarah M.", "initials": "SM", "role": "CTO, Enterprise Client", "avatar": "https://i.pravatar.cc/150?u=sarah-cto" },
+          { "quote": "From the first discovery session to launch, the team demonstrated real product thinking — not just coding. They understood our business challenges and built around them.", "author": "James R.", "initials": "JR", "role": "Product Lead, Scale-up Client", "avatar": "https://i.pravatar.cc/150?u=james-product" },
+          { "quote": "Our mobile application launched on time, on budget, and has received outstanding reviews from users. NEXVORA's React Native expertise is first-rate.", "author": "Ana T.", "initials": "AT", "role": "Founder & CEO, Startup Client", "avatar": "https://i.pravatar.cc/150?u=ana-founder" }
+        ]
+      }
+    },
+    "footer": {
+      "eyebrow": "Ready to build something great?",
+      "heading": "Let's build what's next.",
+      "description": "Have an idea, product or digital challenge? Let's turn it into something real.",
+      "primaryLabel": "Start a Conversation",
+      "primaryHref": "/contact/",
+      "secondaryLabel": "View Our Work",
+      "secondaryHref": "/work/",
+      "legalLinks": [
+        { "label": "Privacy Policy", "href": "/privacy-policy/" },
+        { "label": "Terms & Conditions", "href": "/terms/" }
+      ],
+      "footerLinks": [
+        { "label": "About", "href": "/about/" },
+        { "label": "Services", "href": "/services/" },
+        { "label": "Work", "href": "/work/" },
+        { "label": "Insights", "href": "/insights/" },
+        { "label": "Contact", "href": "/contact/" }
+      ],
+      "ariaLegal": "Legal documents",
+      "ariaNavigation": "Footer navigation",
+      "copyright": "© 2026 NEXVORA Technologies. All rights reserved.",
+      "attributionPrefix": "",
+      "attributionLinkLabel": "",
+      "attributionLinkHref": ""
+    }
+  },
+  "en": {
+    "page": {
+      "title": "NEXVORA Technologies | Building Tomorrow's Digital Experience",
+      "description": "NEXVORA Technologies designs and engineers modern digital products, mobile applications, scalable platforms and intelligent technology solutions.",
+      "heading": "Technology that moves businesses forward."
+    },
+    "demoBanner": {
+      "label": "",
+      "downloadLabel": "",
+      "downloadHref": "",
+      "customizeLabel": "",
+      "customizeHref": ""
+    },
+    "navigation": {
+      "menu": [
+        { "label": "Services", "href": "/services/" },
+        { "label": "Solutions", "href": "/solutions/" },
+        { "label": "Work", "href": "/work/" },
+        { "label": "About", "href": "/about/" },
+        { "label": "Insights", "href": "/insights/" }
+      ],
+      "cta": {
+        "label": "Let's Talk",
+        "hoverLabel": "Start a Project",
+        "href": "/contact/"
+      },
+      "aria": {
+        "menuOpen": "Open navigation menu",
+        "menuClose": "Close menu",
+        "menuExpand": "Expand submenu",
+        "navMain": "Main navigation",
+        "drawer": "Navigation menu"
+      },
+      "languageLabel": "Choose language"
+    },
+    "sections": {
+      "nova-hero-wireframe": {
+        "eyebrow": "ENGINEERING · DESIGN · TECHNOLOGY",
+        "heading": "Technology that moves",
+        "headingAccent": "businesses forward.",
+        "description": "We design, engineer and scale digital products, platforms and intelligent solutions for businesses ready to move forward.",
+        "primaryCTA": { "label": "Start a Project", "href": "/contact/" },
+        "secondaryCTA": { "label": "Explore Our Work", "href": "/work/" },
+        "trustedBy": "Built with",
+        "trustItems": ["React", "Next.js", "Node.js", "Python", "AI"],
+        "image": "/assets/images/nexvora_hero.jpg",
+        "imageAlt": "NEXVORA Technologies — Digital Engineering Company",
+        "stats": [
+          { "value": "25+", "label": "Digital Products" },
+          { "value": "10+", "label": "Industries" },
+          { "value": "50+", "label": "Projects Delivered" },
+          { "value": "95%", "label": "Client Retention" }
+        ]
+      },
+      "nova-projects": {
+        "title": "Technology we've brought to life",
+        "description": "Explore selected digital products, platforms and experiences we've designed and engineered.",
+        "linkLabel": "View all work",
+        "linkHref": "/work/",
+        "items": [
+          {
+            "slug": "rtc-global-apparels",
+            "title": "RTC Global Apparels",
+            "category": "B2B Commerce / Fashion",
+            "description": "Digital commerce experience for a B2B apparel and garment sourcing business.",
+            "technologies": ["Web", "B2B", "Commerce", "Fashion"],
+            "image": "/assets/images/projects/rtc-global-apparels.jpg",
+            "alt": "RTC Global Apparels — B2B Commerce Platform by NEXVORA Technologies",
+            "url": "https://rtcglobalapparels.com/",
+            "ctaLabel": "View Project",
+            "featured": true
+          },
+          {
+            "slug": "anapurna-sales",
+            "title": "Anapurna Sales",
+            "category": "B2B Commerce / Fashion",
+            "description": "Digital commerce experience for a B2B fashion and wholesale clothing business.",
+            "technologies": ["Web", "B2B", "Commerce", "Fashion"],
+            "image": "/assets/images/projects/anapurna-sales.jpg",
+            "alt": "Anapurna Sales — Wholesale Commerce Platform by NEXVORA Technologies",
+            "url": "https://anapurnasales.com/",
+            "ctaLabel": "View Project",
+            "featured": false
+          },
+          {
+            "slug": "media24x7-india",
+            "title": "Media24x7 India",
+            "category": "Media / Digital Platform",
+            "description": "Digital platform for Media24x7 India, designed to present its media and digital content experience.",
+            "technologies": ["Web", "Digital Platform", "Media"],
+            "image": "/assets/images/projects/media24x7-india.jpg",
+            "alt": "Media24x7 India — Digital Media Platform by NEXVORA Technologies",
+            "url": "https://media24x7india.com/",
+            "ctaLabel": "View Project",
+            "featured": false
+          }
+        ]
+      },
+      "nova-services": {
+        "title": "What we build",
+        "description": "From digital products to intelligent platforms, we combine product thinking, engineering and modern technology to build solutions that scale.",
+        "linkLabel": "View all services",
+        "linkHref": "/services/",
+        "items": [
+          { "number": "01.", "icon": "browser", "title": "Web Development", "description": "Modern, scalable web applications and platforms built for performance and growth." },
+          { "number": "02.", "icon": "device-mobile", "title": "Mobile App Development", "description": "High-quality native and cross-platform mobile experiences for iOS and Android." },
+          { "number": "03.", "icon": "rocket", "title": "Product Engineering", "description": "From MVP to production-grade platforms, we turn ideas into reliable digital products." },
+          { "number": "04.", "icon": "robot", "title": "AI & Automation", "description": "AI-powered applications, intelligent workflows and automation designed around real business needs." },
+          { "number": "05.", "icon": "cloud", "title": "Cloud & Backend", "description": "Scalable APIs, databases, cloud infrastructure and integrations that power modern products." },
+          { "number": "06.", "icon": "palette", "title": "UI/UX & Product Design", "description": "Intuitive digital experiences designed around users, business goals and measurable outcomes." }
+        ]
+      },
+      "nova-team": {
+        "title": "People behind the technology",
+        "description": "Great products are built by people who combine engineering discipline, product thinking and curiosity. We are a team of engineers, designers and technologists focused on building meaningful digital products.",
+        "image": "/assets/images/t001-nova/t001-nova-about-team.webp",
+        "imageAlt": "NEXVORA Technologies — Engineering team",
+        "checks": ["Engineering-first mindset", "Product-focused approach", "Long-term partnerships"],
+        "teamCount": "15+",
+        "teamLabel": "Engineers & Designers",
+        "teamAriaLabel": "Our team",
+        "teamAvatars": [
+          { "src": "/assets/images/t001-nova/t001-nova-avatar-01@220.webp", "alt": "NEXVORA team member" },
+          { "src": "/assets/images/t001-nova/t001-nova-avatar-02@220.webp", "alt": "NEXVORA team member" },
+          { "src": "/assets/images/t001-nova/t001-nova-avatar-03@220.webp", "alt": "NEXVORA team member" }
+        ],
+        "buttonLabel": "About NEXVORA",
+        "buttonHref": "/about/"
+      },
+      "faq3": {
+        "title": "Frequently asked questions",
+        "description": "Common questions about working with NEXVORA Technologies — from starting a project to long-term partnership.",
+        "tagline": "FAQ",
+        "items": [
+          { "q": "How do you start a new project?", "a": "We begin with a discovery session to understand your business goals, technical requirements, and user needs. From there, we define scope, architecture and a clear roadmap before a single line of code is written." },
+          { "q": "How long does a typical project take?", "a": "Project timelines vary based on scope and complexity. An MVP typically takes 6–12 weeks. Larger platforms may take 3–6 months. We provide realistic timelines during discovery and keep you informed throughout." },
+          { "q": "Do you work with startups?", "a": "Yes. We work with startups from early-stage MVP through to growth-stage scaling. We understand the pace and constraints of early-stage companies and adapt our process accordingly." },
+          { "q": "Can you work with an existing development team?", "a": "Absolutely. We integrate seamlessly with in-house teams — whether that means leading development, augmenting capacity, or providing specialist expertise in areas like AI, mobile or cloud infrastructure." },
+          { "q": "Do you provide ongoing maintenance and support?", "a": "Yes. We offer ongoing support, performance monitoring, feature development and platform evolution post-launch. We believe technology relationships extend well beyond launch." },
+          { "q": "Can you build an MVP and scale it later?", "a": "Yes — and we strongly recommend this approach for new products. We architect MVPs with future scale in mind, so expanding the platform doesn't require rebuilding the foundation." },
+          { "q": "What technologies do you work with?", "a": "Our core stack includes React, Next.js, React Native, Node.js, Python, PostgreSQL, Firebase, Supabase and cloud platforms including AWS. For AI projects we work with modern LLMs and AI APIs." }
+        ]
+      },
+      "testimonial-v2": {
+        "title": "Reviews that say more",
+        "description": "What our clients say about working with NEXVORA Technologies.",
+        "tagline": "Client reviews",
+        "avatarAltPrefix": "Photo of",
+        "items": [
+          { "quote": "NEXVORA delivered a platform that genuinely transformed how we operate. The engineering quality and attention to product detail was exceptional throughout.", "author": "Sarah M.", "initials": "SM", "role": "CTO, Enterprise Client", "avatar": "https://i.pravatar.cc/150?u=sarah-cto" },
+          { "quote": "From the first discovery session to launch, the team demonstrated real product thinking — not just coding. They understood our business challenges and built around them.", "author": "James R.", "initials": "JR", "role": "Product Lead, Scale-up Client", "avatar": "https://i.pravatar.cc/150?u=james-product" },
+          { "quote": "Our mobile application launched on time, on budget, and has received outstanding reviews from users. NEXVORA's React Native expertise is first-rate.", "author": "Ana T.", "initials": "AT", "role": "Founder & CEO, Startup Client", "avatar": "https://i.pravatar.cc/150?u=ana-founder" }
+        ]
+      }
+    },
+    "footer": {
+      "eyebrow": "Ready to build something great?",
+      "heading": "Let's build what's next.",
+      "description": "Have an idea, product or digital challenge? Let's turn it into something real.",
+      "primaryLabel": "Start a Conversation",
+      "primaryHref": "/contact/",
+      "secondaryLabel": "View Our Work",
+      "secondaryHref": "/work/",
+      "legalLinks": [
+        { "label": "Privacy Policy", "href": "/privacy-policy/" },
+        { "label": "Terms & Conditions", "href": "/terms/" }
+      ],
+      "footerLinks": [
+        { "label": "About", "href": "/about/" },
+        { "label": "Services", "href": "/services/" },
+        { "label": "Work", "href": "/work/" },
+        { "label": "Insights", "href": "/insights/" },
+        { "label": "Contact", "href": "/contact/" }
+      ],
+      "ariaLegal": "Legal documents",
+      "ariaNavigation": "Footer navigation",
+      "copyright": "© 2026 NEXVORA Technologies. All rights reserved.",
+      "attributionPrefix": "",
+      "attributionLinkLabel": "",
+      "attributionLinkHref": ""
+    }
+  }
+}

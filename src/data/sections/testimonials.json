@@ -1,0 +1,96 @@
+{
+  "title": "Reviews that say more",
+  "description": "What our clients say about working with NEXVORA Technologies.",
+  "testimonials": [
+    {
+      "quote": "NEXVORA delivered a platform that genuinely transformed how we operate. The engineering quality and attention to product detail was exceptional throughout.",
+      "author": "Sarah M.",
+      "role": "CTO",
+      "avatar": "https://i.pravatar.cc/150?u=sarah-cto",
+      "company": "Enterprise Client"
+    },
+    {
+      "quote": "From the first discovery session to launch, the team demonstrated real product thinking — not just coding. They understood our business challenges and built around them.",
+      "author": "James R.",
+      "role": "Product Lead",
+      "avatar": "https://i.pravatar.cc/150?u=james-product",
+      "company": "Scale-up Client"
+    },
+    {
+      "quote": "Our mobile application launched on time, on budget, and has received outstanding reviews from users. NEXVORA's React Native expertise is first-rate.",
+      "author": "Ana T.",
+      "role": "Founder & CEO",
+      "avatar": "https://i.pravatar.cc/150?u=ana-founder",
+      "company": "Startup Client"
+    },
+    {
+      "quote": "The AI automation they built reduced our manual processing time by over 70%. It continues to evolve and improve every quarter.",
+      "author": "David K.",
+      "role": "Head of Operations",
+      "avatar": "https://i.pravatar.cc/150?u=david-ops",
+      "company": "Enterprise Client"
+    },
+    {
+      "quote": "What impressed me most was how they balanced speed with code quality. We moved fast, but the architecture they designed has scaled without issues.",
+      "author": "Laura B.",
+      "role": "VP Engineering",
+      "avatar": "https://i.pravatar.cc/150?u=laura-vp",
+      "company": "FinTech Client"
+    },
+    {
+      "quote": "They became a genuine extension of our team — not just a vendor. Long-term partnership is what differentiates NEXVORA from everyone else we have worked with.",
+      "author": "Michael S.",
+      "role": "Director of Technology",
+      "avatar": "https://i.pravatar.cc/150?u=michael-dir",
+      "company": "Enterprise Client"
+    }
+  ],
+  "marquee": {
+    "title": "Reviews that say more",
+    "description": "What our clients say about working with NEXVORA Technologies.",
+    "testimonials": [
+      {
+        "quote": "NEXVORA delivered a platform that genuinely transformed how we operate. The engineering quality and attention to product detail was exceptional throughout.",
+        "author": "Sarah M.",
+        "role": "CTO",
+        "avatar": "https://i.pravatar.cc/150?u=sarah-cto",
+        "company": "Enterprise Client"
+      },
+      {
+        "quote": "From the first discovery session to launch, the team demonstrated real product thinking — not just coding. They understood our business challenges and built around them.",
+        "author": "James R.",
+        "role": "Product Lead",
+        "avatar": "https://i.pravatar.cc/150?u=james-product",
+        "company": "Scale-up Client"
+      },
+      {
+        "quote": "Our mobile application launched on time, on budget, and has received outstanding reviews from users. NEXVORA's React Native expertise is first-rate.",
+        "author": "Ana T.",
+        "role": "Founder & CEO",
+        "avatar": "https://i.pravatar.cc/150?u=ana-founder",
+        "company": "Startup Client"
+      },
+      {
+        "quote": "The AI automation they built reduced our manual processing time by over 70%. It continues to evolve and improve every quarter.",
+        "author": "David K.",
+        "role": "Head of Operations",
+        "avatar": "https://i.pravatar.cc/150?u=david-ops",
+        "company": "Enterprise Client"
+      },
+      {
+        "quote": "What impressed me most was how they balanced speed with code quality. We moved fast, but the architecture they designed has scaled without issues.",
+        "author": "Laura B.",
+        "role": "VP Engineering",
+        "avatar": "https://i.pravatar.cc/150?u=laura-vp",
+        "company": "FinTech Client"
+      },
+      {
+        "quote": "They became a genuine extension of our team — not just a vendor. Long-term partnership is what differentiates NEXVORA from everyone else we have worked with.",
+        "author": "Michael S.",
+        "role": "Director of Technology",
+        "avatar": "https://i.pravatar.cc/150?u=michael-dir",
+        "company": "Enterprise Client"
+      }
+    ]
+  }
+}

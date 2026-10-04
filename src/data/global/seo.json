@@ -1,0 +1,13 @@
+{
+  "defaultTitle": "NEXVORA Technologies | Building Tomorrow's Digital Experience",
+  "defaultDescription": "NEXVORA Technologies designs and engineers modern digital products, mobile applications, scalable platforms and intelligent technology solutions.",
+  "defaultOgImage": "/og-image.png",
+  "index": true,
+  "follow": true,
+  "analytics": {
+    "googleAnalyticsId": "",
+    "googleTagManagerId": "",
+    "facebookPixelId": "",
+    "clarityId": ""
+  }
+}

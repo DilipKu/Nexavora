@@ -1,0 +1,31 @@
+{
+  "title": "Ideas, engineering & technology",
+  "tagline": "ARTICLES & INSIGHTS",
+  "description": "Perspectives on modern software architecture, AI integration, and engineering practices from NEXVORA technologists.",
+  "items": [
+    {
+      "category": "AI & Automation",
+      "title": "How AI is changing modern product development",
+      "excerpt": "Exploring practical AI integration patterns that generate commercial value for digital platforms.",
+      "readTime": "5 min read",
+      "date": "October 2026",
+      "href": "/insights/"
+    },
+    {
+      "category": "Mobile Engineering",
+      "title": "Building scalable mobile applications",
+      "excerpt": "Architectural principles for engineering high-performance cross-platform iOS and Android applications.",
+      "readTime": "6 min read",
+      "date": "September 2026",
+      "href": "/insights/"
+    },
+    {
+      "category": "Cloud & Architecture",
+      "title": "Designing technology for long-term growth",
+      "excerpt": "How to structure backend systems and cloud infrastructure to handle 10x scale without rewriting core modules.",
+      "readTime": "7 min read",
+      "date": "September 2026",
+      "href": "/insights/"
+    }
+  ]
+}

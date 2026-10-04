@@ -1,0 +1,12 @@
+{
+  "seo": {
+    "title": "Services & Solutions | NEXVORA Technologies",
+    "description": "Discover our digital product capabilities: Web Development, Mobile App Dev, AI & Automation, Product Engineering, Cloud & Backend, and UI/UX Design."
+  },
+  "heading": "Empowering Your Digital Transformation",
+  "sections": [
+    { "id": "navbar", "variant": "floating" },
+    { "id": "novaServices", "variant": "default" },
+    { "id": "footer", "variant": "nova" }
+  ]
+}

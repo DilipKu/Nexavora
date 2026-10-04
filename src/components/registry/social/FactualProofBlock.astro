@@ -1,0 +1,53 @@
+---
+import Section from "@components/ui/layout/Section.astro";
+import Container from "@components/ui/layout/Container.astro";
+import Heading from "@components/ui/atoms/Heading.astro";
+import Text from "@components/ui/atoms/Text.astro";
+import jsonData from "@data/sections/factual-proof.json";
+
+interface Principle {
+  number: string;
+  title: string;
+  description: string;
+}
+
+interface Props {
+  title?: string;
+  tagline?: string;
+  description?: string;
+  items?: Principle[];
+  class?: string;
+}
+
+const props = Astro.props as Props;
+const title = props.title ?? jsonData.title;
+const tagline = props.tagline ?? jsonData.tagline;
+const description = props.description ?? jsonData.description;
+const items = props.items ?? jsonData.items;
+---
+
+<Section id="principles" tone="page" class:list={["py-16 lg:py-24 bg-surface text-brand-dark relative border-t border-black/5 dark:border-white/10", props.class]}>
+  <Container class="w-full max-w-none px-[clamp(1.25rem,4vw,4rem)]">
+    <div class="mb-12 max-w-3xl lg:mb-16">
+      {tagline && <Text tag="p" variant="accent-label" class="mb-3 font-semibold tracking-[0.18em]">{tagline}</Text>}
+      <Heading tag="h2" variant="section-title" class="mb-4 text-[clamp(2rem,3.5vw,3.25rem)] font-bold tracking-tight">{title}</Heading>
+      {description && <Text variant="lead" class="text-base opacity-85 sm:text-lg">{description}</Text>}
+    </div>
+
+    <div class="grid grid-cols-1 gap-6 sm:grid-cols-3 lg:gap-8">
+      {items.map((item) => (
+        <div class="group relative flex flex-col justify-between rounded-xl border border-black/10 bg-surface-container-low p-6 transition-all duration-300 hover:border-brand-accent/50 hover:shadow-lg dark:border-white/10 sm:p-8">
+          <div>
+            <div class="mb-4 font-mono text-xs font-bold tracking-widest text-brand-accent">{item.number}</div>
+            <Heading tag="h3" variant="feature-title" class="mb-3 text-xl font-bold tracking-tight text-brand-dark dark:text-white">
+              {item.title}
+            </Heading>
+            <Text variant="body" class="text-sm leading-relaxed opacity-85">
+              {item.description}
+            </Text>
+          </div>
+        </div>
+      ))}
+    </div>
+  </Container>
+</Section>

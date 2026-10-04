@@ -1,0 +1,55 @@
+---
+import Section from "@components/ui/layout/Section.astro";
+import Container from "@components/ui/layout/Container.astro";
+import Heading from "@components/ui/atoms/Heading.astro";
+import Text from "@components/ui/atoms/Text.astro";
+import jsonData from "@data/sections/why-nexvora.json";
+
+interface Differentiator {
+  number: string;
+  title: string;
+  description: string;
+}
+
+interface Props {
+  title?: string;
+  tagline?: string;
+  description?: string;
+  items?: Differentiator[];
+  class?: string;
+}
+
+const props = Astro.props as Props;
+const title = props.title ?? jsonData.title;
+const tagline = props.tagline ?? jsonData.tagline;
+const description = props.description ?? jsonData.description;
+const items = props.items ?? jsonData.items;
+---
+
+<Section id="why-nexvora" tone="page" class:list={["py-16 lg:py-24 bg-brand-dark text-white relative overflow-hidden", props.class]}>
+  <div class="pointer-events-none absolute -top-40 -right-40 size-96 rounded-full bg-brand-accent/10 blur-3xl" aria-hidden="true"></div>
+  <Container class="w-full max-w-none px-[clamp(1.25rem,4vw,4rem)] relative z-10">
+    <div class="mb-12 max-w-3xl lg:mb-16">
+      {tagline && <Text tag="p" variant="accent-label" class="mb-3 font-semibold tracking-[0.18em] text-brand-accent">{tagline}</Text>}
+      <Heading tag="h2" variant="section-title" class="mb-4 text-[clamp(2rem,3.5vw,3.25rem)] font-bold tracking-tight text-white">{title}</Heading>
+      {description && <Text variant="lead" class="text-base text-white/80 sm:text-lg">{description}</Text>}
+    </div>
+
+    <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 lg:gap-8">
+      {items.map((item) => (
+        <div class="group relative flex flex-col justify-between rounded-xl border border-white/10 bg-white/5 p-6 backdrop-blur-sm transition-all duration-300 hover:border-brand-accent/50 hover:bg-white/10 sm:p-8">
+          <div>
+            <div class="mb-4 font-mono text-xs font-bold tracking-widest text-brand-accent">{item.number}</div>
+            <Heading tag="h3" variant="feature-title" class="mb-3 text-xl font-bold tracking-tight text-white group-hover:text-brand-accent transition-colors">
+              {item.title}
+            </Heading>
+            <Text variant="body" class="text-sm leading-relaxed text-white/75">
+              {item.description}
+            </Text>
+          </div>
+          <div class="mt-6 h-0.5 w-8 bg-brand-accent/30 transition-all duration-300 group-hover:w-full group-hover:bg-brand-accent"></div>
+        </div>
+      ))}
+    </div>
+  </Container>
+</Section>

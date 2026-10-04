@@ -1,0 +1,44 @@
+{
+  "title": "Technology we've brought to life",
+  "description": "Explore selected digital products, platforms and experiences we've designed and engineered.",
+  "linkLabel": "View all work",
+  "linkHref": "/work/",
+  "items": [
+    {
+      "slug": "rtc-global-apparels",
+      "title": "RTC Global Apparels",
+      "category": "B2B Commerce / Fashion",
+      "description": "Digital commerce experience for a B2B apparel and garment sourcing business.",
+      "technologies": ["Web", "E-commerce", "B2B", "Digital Platform"],
+      "image": "/assets/images/projects/rtc-global-apparels.jpg",
+      "alt": "RTC Global Apparels — B2B Commerce Platform by NEXVORA Technologies",
+      "url": "https://rtcglobalapparels.com/",
+      "ctaLabel": "View Project",
+      "featured": true
+    },
+    {
+      "slug": "anapurna-sales",
+      "title": "Anapurna Sales",
+      "category": "B2B Commerce / Fashion",
+      "description": "Digital commerce experience for a B2B fashion and wholesale clothing business.",
+      "technologies": ["Web", "B2B", "Commerce", "Fashion"],
+      "image": "/assets/images/projects/anapurna-sales.jpg",
+      "alt": "Anapurna Sales — Wholesale Commerce Platform by NEXVORA Technologies",
+      "url": "https://anapurnasales.com/",
+      "ctaLabel": "View Project",
+      "featured": false
+    },
+    {
+      "slug": "media24x7-india",
+      "title": "Media24x7 India",
+      "category": "Media / Digital Platform",
+      "description": "Digital platform for Media24x7 India, designed to present its media and digital content experience.",
+      "technologies": ["Web", "Digital Platform", "Media"],
+      "image": "/assets/images/projects/media24x7-india.jpg",
+      "alt": "Media24x7 India — Digital Media Platform by NEXVORA Technologies",
+      "url": "https://media24x7india.com/",
+      "ctaLabel": "View Project",
+      "featured": false
+    }
+  ]
+}
