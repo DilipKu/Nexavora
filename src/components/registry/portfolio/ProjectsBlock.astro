@@ -58,11 +58,13 @@ const secondaryProjects = items.filter((item) => item !== featuredProject);
     </div>
 
     {featuredProject && (
-      <div class="featured-project-card group relative mb-8 overflow-hidden rounded-2xl border border-black/10 bg-surface shadow-xl dark:border-white/10">
+      <div class="featured-project-card group relative mb-8 overflow-hidden rounded-[1.75rem] border border-brand-accent/25 bg-surface shadow-xl dark:border-white/10">
         <a href={featuredProject.url || linkHref} target={featuredProject.url ? "_blank" : undefined} rel={featuredProject.url ? "noopener noreferrer" : undefined} class="grid grid-cols-1 overflow-hidden lg:grid-cols-12">
-          <div class="relative min-h-[22rem] lg:col-span-7 lg:min-h-[30rem]">
-            <SmartImage src={featuredProject.image} alt={featuredProject.alt} width={1280} height={800} loading="eager" class="h-full w-full object-cover object-center transition-transform duration-700 ease-out group-hover:scale-105" />
-            <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent lg:hidden"></div>
+          <div class:list={["relative lg:col-span-7", featuredProject.slug === "kirdaar-celebrations" ? "aspect-[1644/957] min-h-0 lg:aspect-auto lg:min-h-[30rem]" : "min-h-[22rem] lg:min-h-[30rem]"]}>
+            <SmartImage src={featuredProject.image} alt={featuredProject.alt} width={featuredProject.slug === "kirdaar-celebrations" ? 1644 : 1280} height={featuredProject.slug === "kirdaar-celebrations" ? 957 : 800} loading="eager" class="h-full w-full object-cover object-center transition-transform duration-700 ease-out group-hover:scale-105" />
+            {featuredProject.slug !== "kirdaar-celebrations" && (
+              <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent lg:hidden"></div>
+            )}
           </div>
           <div class="flex flex-col justify-between p-6 sm:p-8 lg:col-span-5 lg:p-10">
             <div>
@@ -97,9 +99,9 @@ const secondaryProjects = items.filter((item) => item !== featuredProject);
     )}
 
     {secondaryProjects.length > 0 && (
-      <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:gap-8">
+      <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 lg:gap-8">
         {secondaryProjects.map((item) => (
-          <a href={item.url || linkHref} target={item.url ? "_blank" : undefined} rel={item.url ? "noopener noreferrer" : undefined} class="secondary-project-card group relative flex flex-col overflow-hidden rounded-2xl border border-black/10 bg-surface shadow-md transition-all duration-300 hover:-translate-y-1 hover:shadow-xl dark:border-white/10">
+          <a href={item.url || linkHref} target={item.url ? "_blank" : undefined} rel={item.url ? "noopener noreferrer" : undefined} class="secondary-project-card group relative flex flex-col overflow-hidden rounded-2xl border border-black/10 bg-surface shadow-md transition-all duration-300 hover:-translate-y-1 hover:shadow-xl sm:last:col-span-2 lg:last:col-span-1 dark:border-white/10">
             <div class="relative aspect-[16/10] w-full overflow-hidden bg-surface-container-low">
               <SmartImage src={item.image} alt={item.alt} width={900} height={600} loading="lazy" class="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-105" />
               <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>

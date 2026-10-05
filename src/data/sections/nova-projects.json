@@ -14,7 +14,7 @@
       "alt": "RTC Global Apparels — B2B Commerce Platform by NEXVORA Technologies",
       "url": "https://rtcglobalapparels.com/",
       "ctaLabel": "View Project",
-      "featured": true
+      "featured": false
     },
     {
       "slug": "anapurna-sales",
@@ -39,6 +39,18 @@
       "url": "https://media24x7india.com/",
       "ctaLabel": "View Project",
       "featured": false
+    },
+    {
+      "slug": "kirdaar-celebrations",
+      "title": "Kirdaar Celebrations",
+      "category": "E-commerce / Ethnic Fashion",
+      "description": "An online shopping experience for curated Indian ethnic wear, featuring sarees, lehengas, gowns, occasion-led collections, and personalized styling.",
+      "technologies": ["E-commerce", "Ethnic Fashion", "Personalized Styling", "Online Store"],
+      "image": "/assets/images/projects/Kirdaar Celebrations Bridal Fashion Showcase.png",
+      "alt": "Kirdaar Celebrations bridal and festive ethnic fashion showcase",
+      "url": "https://kirdaarcelebrations.com/",
+      "ctaLabel": "View Project",
+      "featured": true
     }
   ]
 }
